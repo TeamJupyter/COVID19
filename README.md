@@ -26,3 +26,7 @@
 - The data we have is from a Kaggle dataset called "COVID-19 patient pre-condition dataset," by which data was taken from data sources from the Mexican government. The data contains a huge number of anonymised patient-related information that include the patient's age, sex, any other respiratory diseases they had, and many more health factors.
 - This dataset include over 500,000 data points.
 - This Kaggle datasource can be found [here](https://www.kaggle.com/tanmoyx/covid19-patient-precondition-dataset?select=covid.csv).
+
+**Database**
+- Our data is uploaded to a database in pgAdmin, where we used SQL to import data
+- We have connected that database to our Jupyter Notebook file using SQL Alchemy
