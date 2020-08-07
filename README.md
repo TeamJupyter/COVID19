@@ -32,4 +32,4 @@
 - We have connected that database to our Jupyter Notebook file using SQL Alchemy
 
 **Presentation**
-- The link to the presentation is here: https://docs.google.com/presentation/d/1KHt8QmYePNy9SOjz3oqtWnLoiJhlV-bDcjrLjKONqHI/edit?usp=sharing
+- The link to the presentation is [here](https://docs.google.com/presentation/d/1KHt8QmYePNy9SOjz3oqtWnLoiJhlV-bDcjrLjKONqHI/edit?usp=sharing).
