@@ -33,3 +33,41 @@
 
 **Presentation**
 - The link to the presentation is [here](https://docs.google.com/presentation/d/1KHt8QmYePNy9SOjz3oqtWnLoiJhlV-bDcjrLjKONqHI/edit?usp=sharing).
+
+**Exploratory Data Analysis**
+- First, we assessed all the labels described by the dataset on Kaggle. We replaced all unknown objects with NaN instead of the code they were given.
+- Next, we made our primary key for each patient the index instead of the given id so that the values would be numeric.
+- We dropped the columns id, date_died, and pregnancy because we did not find that information relevant to answering our question.
+- We also dropped all rows with NaN objects.
+- We changed the data types for entry_date and date_symptoms to data frame so that we could subtract the values and have one column representing the difference between them. We named this new column entry_date_minus_date_symptoms and converted it to days with the data type integer so that it could be used in our modeling.
+- We filtered for days greater than 0 for data cleanup purposes. 
+- We moved the pneumonia column to the end so it would be easier to write out ranges excluding pneumonia since it is our dependent variable.
+- We checked the value counts and ensured those with and without pneumonia were balanced.
+
+**Supervised Models**
+- The following supervised machine learning models were used through sklearn to analyze this dataset:
+  - Logistic Regression
+  - Decision Tree Classifier
+  - K Nearest Neighbor Classifier
+  - Linear Discriminant Analysis
+  - Gaussian Naive Bayes
+- The independent variables for these models were all columns excluding the index and pneumonia. The depedent variable was pneumonia.
+- Below are the cross validation scores with their respective standard deviations for each model:
+  - Logistic Regression: 0.7146 (0.06)
+  - Decision Tree Classifier: 0.642150 (0.05)
+  - K Nearest Neighbor Classifier: 0.6809 (0.05)
+  - Linear Discriminant Analysis: 0.7138 (0.06)
+  - Gaussian Naive Bayes: 0.5973 (0.03)
+  
+**Unsupervised Model**
+- When plotting different variables against each other, we noticed that because most variables are binary and since they had even distributions among variables, the plots did not have clear clusters from which to analyze. Even after fitting for the most accurate number of clusters using an elbow plot, applying it to a K-Means model still did not show clear results.
+
+**PCA**
+- First, we standardized objects in the dataframe using StandardScalar. 
+- Then, we initialized the PCA model using the transformed data.
+- We added more prinicpal components until the sum of the explained variance ratio equaled above 50%.
+- We calculated the inertia for a range of K values and found the appropriate number using the elbow curve.
+- We initialized the K-means model, fit the model, predicted the number of clusters, and plotted principal components against each other.
+- We then used sklearn's train_test_split function on the data with all columns except pneumonia for x and pneumonia for y. 
+- We transformed the training and testing groups with PCA and analyzed them with logistic regression.
+- The accuracy score turned out to be 0.6946, which is less than that of the supervised machine learning logistic regression model.
