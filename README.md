@@ -26,8 +26,9 @@
 - Our data is uploaded to a database in pgAdmin, where we used SQL to import data
 - We have connected that database to our Jupyter Notebook file using SQL Alchemy
 
-**Presentation**
+**Presentation & Dashboard**
 - The link to the presentation is [here](https://github.com/TeamJupyter/COVID19/blob/master/Segment%203%20-%20Presentation%20Draft.pptx).
+- The link to the interactive dashboard is [here](https://public.tableau.com/profile/nathania.rockwood#!/vizhome/COVID-19FinalProjectDashboard/Dashboard2?publish=yes).
 
 **Exploratory Data Analysis**
 - First, we assessed all the labels described by the dataset on Kaggle. We replaced all unknown objects with NaN instead of the code they were given.
