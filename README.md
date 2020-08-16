@@ -27,7 +27,7 @@
 - We have connected that database to our Jupyter Notebook file using SQL Alchemy
 
 **Presentation**
-- The link to the presentation is [here](https://docs.google.com/presentation/d/1KHt8QmYePNy9SOjz3oqtWnLoiJhlV-bDcjrLjKONqHI/edit?usp=sharing).
+- The link to the presentation is [here](https://github.com/TeamJupyter/COVID19/blob/master/Segment%203%20-%20Presentation%20Draft.pptx).
 
 **Exploratory Data Analysis**
 - First, we assessed all the labels described by the dataset on Kaggle. We replaced all unknown objects with NaN instead of the code they were given.
