@@ -67,3 +67,15 @@
 - We then used sklearn's train_test_split function on the data with all columns except pneumonia for x and pneumonia for y. 
 - We transformed the training and testing groups with PCA and analyzed them with logistic regression.
 - The accuracy score turned out to be 0.6946, which is less than that of the supervised machine learning logistic regression model.
+
+**Final Analysis**
+- The ROC curve (receiver operating characteristic curve) is a graph showing the performance of the classification model at all classification thresholds with two parameters, the True Positive Rate and the False Positive Rate. AUC stands for "Area under the ROC Curve" and measures the entire two-dimensional area underneath the entire ROC curve, which, in this case, is 0.59. 0.59 is the probability that the supervised machine learning logistic regression model ranks a random positive example more highly than a random negative example.
+- Based on the classification report, the precision for prediction of no pneumonia and pneumonia are slightly misaligned with each other. 
+- However, the recall (sensitivity) for predicting pneumonia is much lower than it is for predicting an absence of pneumonia. 
+- The lower recall for pneumonia is reflected in the dropped F1 score as well. 
+- Recall for those with pneumonia is low, which is indicative of a large number of false negatives. 
+- However, the accuracy score is relatively high, with a score of 0.72. 
+
+In summary, this supervised logistic regression model is reasonable at classifying patients with and without pneumonia because the model’s accuracy, 0.72, is relatively high compared to other models analyzed.
+
+
