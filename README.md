@@ -27,7 +27,7 @@
 - We have connected that database to our Jupyter Notebook file using SQL Alchemy
 
 **Presentation & Dashboard**
-- The link to the presentation is [here](https://github.com/TeamJupyter/COVID19/blob/master/Segment%203%20-%20Presentation%20Draft.pptx).
+- The link to the presentation is [here](https://github.com/TeamJupyter/COVID19/blob/master/Final%20Presentation.pptx).
 - The link to the interactive dashboard is [here](https://public.tableau.com/profile/nathania.rockwood#!/vizhome/COVID-19FinalProjectDashboard/Dashboard2?publish=yes).
 
 **Exploratory Data Analysis**
@@ -78,4 +78,7 @@
 
 In summary, this supervised logistic regression model is reasonable at classifying patients with and without pneumonia because the model’s accuracy, 0.72, is relatively high compared to other models analyzed.
 
-
+**Recommendations for Further Analysis**
+- Find data from other countries that had additional attributes to compare or if they had the same related to pneumonia, what other factors may have caused it.
+- Find data with a reliable source to draw accurate conclusions since there is a lot of disinformation with COVID-19 data available.
+- Repeat analysis with supervised, unsupervised, and PCA transformed machine learning models in the future when data is more readily available since COVID-19 is new.
